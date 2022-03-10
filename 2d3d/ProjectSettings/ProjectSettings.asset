@@ -538,7 +538,9 @@ PlayerSettings:
   switchPlayerConnectionEnabled: 1
   switchUseNewStyleFilepaths: 0
   switchUseMicroSleepForYield: 1
+  switchEnableRamDiskSupport: 0
   switchMicroSleepForYieldTime: 25
+  switchRamDiskSpaceSize: 12
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
@@ -769,7 +771,7 @@ PlayerSettings:
   cloudProjectId: fad04bec-8e40-411c-b76e-d649fc06b7d2
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project (1)
+  projectName: MsPaintGame
   organizationId: b4fcbc6-ea9a-4279-85fa-ee5b5dbdd794
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1

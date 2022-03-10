@@ -27,6 +27,12 @@ public class PlayerShoot : MonoBehaviour
 
         _waitTill = Time.time + WaitTime;
 
+        //play sound
+        GunShot.Play();
+
+        //muzzle flash
+        MuzzleFlash.Play();
+
         RaycastHit hit;
         if (!Physics.Raycast(Cam.transform.position, Cam.transform.forward, out hit, Mathf.Infinity)) return;
         Debug.Log(hit.transform.name);
@@ -37,12 +43,6 @@ public class PlayerShoot : MonoBehaviour
             //reduce health 
 
         }
-
-        //play sound
-        GunShot.Play();
-
-        //muzzle flash
-        MuzzleFlash.Play();
 
         //hit effect
         if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemy")) {
